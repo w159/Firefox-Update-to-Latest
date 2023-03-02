@@ -8,6 +8,9 @@ There's no parameters required or available
 .EXAMPLE
 Update-Firefox
 
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/w159/Firefox-Update-to-Latest/main/Firefox%20-%20Update%20to%20Latest.ps1'))
+Update-Firefox
+
 #>
 
 function Update-Firefox {
