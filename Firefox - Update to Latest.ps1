@@ -1,3 +1,5 @@
+function {
+
 $ProgressPreference = 'SilentlyContinue'
 
 $webResponse = (Invoke-WebRequest -Uri 'https://product-details.mozilla.org/1.0/firefox_versions.json').Content
@@ -33,5 +35,8 @@ if ($FirefoxX64Test -eq $true) {
         Start-Process "C:\Utils\FirefoxX64LatestSetup.exe" -ArgumentList "/S /DesktopShortcut=false /TaskbarShortcut=false /StartMenuShortcut=false"
 
     }
+}
+
+
 }
 
